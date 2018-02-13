@@ -46,6 +46,8 @@ h2.title {
     letter-spacing: 6px;
     border-radius: 30px;
     font-weight: 800;
+    border: 0px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .button.secondary {
