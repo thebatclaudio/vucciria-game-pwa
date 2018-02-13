@@ -1,0 +1,35 @@
+.players-list {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.players-list li {
+    background-color: rgba(255,255,255,0.5);
+    padding: 20px 10px;
+    margin: 1px 0px;
+}
+
+.players-list li h4 {
+    margin: 0px;
+    text-transform: uppercase;
+}
+
+input.player-input {
+    background-color: rgba(255,255,255,0.5);
+    padding: 20px 10px;
+    margin: 1px 0px;
+    border: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: 3px solid #000;
+    width: 65vw;
+    margin: 20px auto;
+    display: block;
+    font-weight: 600;
+}
+
+.button.next-card-button {
+    position: fixed;
+    bottom: 20px;
+}

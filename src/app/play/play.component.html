@@ -1,0 +1,19 @@
+<div class="container" *ngIf="!play">
+  <h3 class="title">Players</h3>
+  <ul class="players-list">
+    <li *ngFor="let player of players">
+      <h4 class="player-name">{{player.name}}</h4>
+    </li>
+  </ul>
+  <form (ngSubmit)="savePlayer()" *ngIf="formOpen">
+    <input #playerInput class="player-input" [(ngModel)]="newPlayer.name" name="playerInput" placeholder="Player name">
+  </form>
+  <a class="button secondary" (click)="insertPlayer()" *ngIf="!formOpen">Add a player</a>
+  <a class="button" *ngIf="!formOpen" (click)="startGame()" [ngClass]="{ disabled:players.length < 2 }">Play</a>
+</div>
+<div class="container" *ngIf="play">
+  <h3 class="title">{{currentPlayer.name}}</h3>
+  <h2 class="title">{{currentCard.name}}</h2>
+  <p>{{currentCard.info}}</p>
+  <a class="button next-card-button" (click)="nextCard()">Next card</a>
+</div>

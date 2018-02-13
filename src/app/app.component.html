@@ -1,0 +1,7 @@
+<app-menu *ngIf="router.url !== '/'"></app-menu>
+
+<div id="logo" *ngIf="router.url !== '/'">VucciriaGame</div>
+
+<particles [params]="myParams" [style]="myStyle" [width]="width" [height]="height"></particles>
+
+<router-outlet></router-outlet>

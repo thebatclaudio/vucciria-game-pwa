@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+router-outlet {
+    display: block;
+    margin-top: 100px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 5%;
+}
+
+.title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2.title {
+    font-size: 24px;
+}
+
+h2.title {
+    font-size: 28px;
+}
+
+/*** ======= BUTTONS ======= ***/
+.button {
+    width: 90vw;
+    margin-left: 5vw;
+    margin-top: 20px;
+    height: 60px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #212121;
+    color: #FFF;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 60px;
+    letter-spacing: 6px;
+    border-radius: 30px;
+    font-weight: 800;
+}
+
+.button.secondary {
+    background: none;
+    box-sizing: border-box;
+    border: 3px solid #212121;
+    color: #212121;
+}
+
+.container .button {
+    margin-left: 0px;
+}
+
+.button.disabled {
+    opacity: 0.2;
+}

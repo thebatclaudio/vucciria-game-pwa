@@ -1,0 +1,143 @@
+
+@media only screen and (min-width: 1440px) {
+    a#menu-button {
+        background-color: #212121;
+        color: #FFF;
+        display: block;
+        height: 50px;
+        width: 50px;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        font-size: 38px;
+        text-align: center;
+        line-height: 50px;
+        z-index: 9999;
+        transition: left 300ms, color 300ms;
+        cursor: pointer;
+    }
+
+    a#menu-button.opened {
+        left: 20px;
+        color: #a53232;
+        transition: left 300ms, color 300ms;
+    }
+
+    .menu-wrapper {
+        background-color: rgba(33,33,33,0.95);;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 666;
+        width: 0;
+        height: 0;
+        -webkit-transition: width 0.4s, height 0.4s, -webkit-transform 0.4s;
+        transition: width 0.4s, height 0.4s, transform 0.4s;
+        -webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+        transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+        overflow: hidden;
+    }
+
+    .menu-wrapper.opened {
+        width: 100vw;
+        height: 100vh;
+        -webkit-transition: width 0.4s, height 0.4s, -webkit-transform 0.4s;
+        transition: width 0.4s, height 0.4s, transform 0.4s;
+        -webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+        transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+    }
+
+    .menu-wrapper ul.menu-ul {
+        margin: 100px 50px 0px;
+        list-style-type: none;
+        padding-left: 0px;
+        font-family: 'Anton', sans-serif;
+    }
+
+    .menu-wrapper ul.menu-ul li {
+        font-size: 4em;
+        text-transform: uppercase;
+        opacity: 0;
+        -webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+        transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+        transition: opacity 0.4s;
+    }
+
+    .menu-wrapper ul.menu-ul li.blog {
+        font-size: 3em;
+    }
+
+    .menu-wrapper.opened ul.menu-ul li {
+        opacity: 1;
+        -webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+        transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+        transition: opacity 0.4s;
+        transition-delay: 0.4s;
+    }
+
+    /* Kumya */
+    .link {
+        outline: none;
+        text-decoration: none;
+        position: relative;
+        overflow: hidden;
+        padding: 10px 20px;
+        line-height: 1;
+        color: #FFFFFF;
+        display: inline-block;
+    }
+
+    .link:hover {
+        color: #a53232;
+    }
+
+    .link::after {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        background: #a53232;
+        -webkit-transform: translate3d(101%,0,0);
+        transform: translate3d(101%,0,0);
+        -webkit-transition: -webkit-transform 0.5s;
+        transition: transform 0.5s;
+        -webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+        transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+    }
+
+    .link:hover::after {
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+    }
+
+    .link span {
+        display: block;
+        position: relative;
+    }
+
+    .link span::before {
+        content: attr(data-letters);
+        position: absolute;
+        color: #fff;
+        left: 0;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 0%;
+        -webkit-transition: width 0.5s;
+        transition: width 0.5s;
+        -webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+        transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+    }
+
+    .link:hover span::before {
+        width: 100%;
+    }
+
+    .social-links-ul li {
+        display: block;
+        float: left;
+    }
+}
