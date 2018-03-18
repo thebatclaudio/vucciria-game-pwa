@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 import { FormsModule } from '@angular/forms';
 import { ParticlesModule } from 'angular-particle';
 
@@ -34,7 +36,8 @@ const appRoutes: Routes = [
     ),
     FormsModule,
     BrowserModule,
-    ParticlesModule
+    ParticlesModule,
+    environment.production ? ServiceWorkerModule.register('ngsw-worker.js') : []
   ],
   providers: [],
   bootstrap: [AppComponent]

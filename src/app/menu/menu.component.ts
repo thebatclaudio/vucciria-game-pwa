@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
-  menuOpened: false;
+  menuOpened: boolean;
 
   constructor() { }
 
