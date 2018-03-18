@@ -1,0 +1,39 @@
+{
+  "configVersion": 1,
+  "index": "C:/Program Files/Git/vucciria-game-pwa/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "C:/Program Files/Git/vucciria-game-pwa/favicon.ico",
+        "C:/Program Files/Git/vucciria-game-pwa/index.html",
+        "C:/Program Files/Git/vucciria-game-pwa/inline.d4ca35b425d9ca6d6e84.bundle.js",
+        "C:/Program Files/Git/vucciria-game-pwa/main.47ce7e23a850f409e117.bundle.js",
+        "C:/Program Files/Git/vucciria-game-pwa/polyfills.f20484b2fa4642e0dca8.bundle.js",
+        "C:/Program Files/Git/vucciria-game-pwa/styles.cb161984ddf422d02077.bundle.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "C:/Program Files/Git/vucciria-game-pwa/assets/vucciria-game-logo.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "C:/Program Files/Git/vucciria-game-pwa/inline.d4ca35b425d9ca6d6e84.bundle.js": "ebf4afa4296918a401ecdb588571d064e9015510",
+    "C:/Program Files/Git/vucciria-game-pwa/assets/vucciria-game-logo.png": "0e7ce92e2a1b081e732e6f1d57b9bf8215f27057",
+    "C:/Program Files/Git/vucciria-game-pwa/main.47ce7e23a850f409e117.bundle.js": "9cd05179ac4359629438735c8b43fd1c228d1869",
+    "C:/Program Files/Git/vucciria-game-pwa/polyfills.f20484b2fa4642e0dca8.bundle.js": "0b0af365e031b7cbba789493d311e94192720c68",
+    "C:/Program Files/Git/vucciria-game-pwa/styles.cb161984ddf422d02077.bundle.css": "7376c89fe1e19c416ca129a7438e750485ee22ab",
+    "C:/Program Files/Git/vucciria-game-pwa/favicon.ico": "7f6f400a668fce4ef9274244e3d54c0739df1b9f",
+    "C:/Program Files/Git/vucciria-game-pwa/index.html": "cd322d19de34f05b98e8dbac627524655e8a0434"
+  }
+}
