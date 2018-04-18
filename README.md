@@ -14,4 +14,4 @@ VucciriaGame è un videogioco di bevuta da tavola realizzato come Progressive We
 ## License
 GNU GENERAL PUBLIC LICENSE
 
-## Copyright (c) 2018 Claudio La Barbera (thebatclaudio)</p>
+### Copyright (c) 2018 Claudio La Barbera (thebatclaudio)
