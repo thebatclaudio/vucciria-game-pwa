@@ -10,3 +10,15 @@
     top: 20px;
     left: 80px;
 }
+
+#background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgb(251, 192, 45);
+}

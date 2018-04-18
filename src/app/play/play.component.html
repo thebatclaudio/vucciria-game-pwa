@@ -3,11 +3,13 @@
   <ul class="players-list">
     <li *ngFor="let player of players">
       <h4 class="player-name">{{player.name}}</h4>
+      <span class="delete" (click)="deletePlayer(player.id)"><i class="fa fa-times"></i></span>
     </li>
   </ul>
   <form (ngSubmit)="savePlayer()" *ngIf="formOpen">
     <input #playerInput class="player-input" [(ngModel)]="newPlayer.name" name="playerInput" placeholder="Player name">
     <button class="button" type="submit">Add player</button>
+    <button class="button secondary" (click)="closeInsertPlayer()">Cancel</button>
   </form>
   <a class="button secondary" (click)="insertPlayer()" *ngIf="!formOpen">Add a player</a>
   <a class="button" *ngIf="!formOpen" (click)="startGame()" [ngClass]="{ disabled:players.length < 2 }">Play</a>

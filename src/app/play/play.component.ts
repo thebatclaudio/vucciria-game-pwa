@@ -109,15 +109,30 @@ export class PlayComponent implements OnInit {
     }, 0);
   }
 
-  savePlayer() {
+  deletePlayer(id) {
+    for(var i in this.players) {
+      if(this.players[i].id == id) {
+        this.players.splice(this.players.indexOf(this.players[i]), 1);
+      }
+    }
+  }
+
+  closeInsertPlayer() {
     this.formOpen = false;
+  }
 
-    this.newPlayer.name = '';
+  savePlayer() {
+    if(this.playerInput.nativeElement.value != '') {
+      this.formOpen = false;
+      this.newPlayer.name = '';
 
-    this.players.push({
-      id: 1,
-      name: this.playerInput.nativeElement.value
-    });
+      this.players.push({
+        id: this.players.length+1,
+        name: this.playerInput.nativeElement.value
+      });
+    } else {
+      this.playerInput.nativeElement.focus();
+    }
   }
 
   startGame() {
