@@ -1,0 +1,17 @@
+#logo-home {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-left: -169.5px;
+    margin-top: -82px;
+}
+
+#play-button {
+    position: absolute;
+    top: 60%;
+}
+
+.login-button {
+    background-color: #3b5998;
+    font-size: 12px;
+}
